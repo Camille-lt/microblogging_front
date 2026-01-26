@@ -14,13 +14,13 @@ export default function LikeButton({ postId, userId }) {
       setLoading(true);
       try {
         // Récupère le nombre total de likes pour le post
-        const countRes = await fetch(`http://localhost:3001/likes/count/${postId}`);
+        const countRes = await fetch(`https://microblogging-back-camille-lebigots-projects.vercel.app/likes/count/${postId}`);
         const countData = await countRes.json();
         setLikeCount(countData.count || 0);
 
         // Récupère les likes du user sur ce post (0 ou 1 like)
         const userLikesRes = await fetch(
-          `http://localhost:3001/likes?post_id=${postId}&user_id=${userId}`
+          `https://microblogging-back-camille-lebigots-projects.vercel.app/likes?post_id=${postId}&user_id=${userId}`
         );
         const userLikes = await userLikesRes.json();
 
@@ -45,7 +45,7 @@ export default function LikeButton({ postId, userId }) {
     try {
       if (!liked) {
         // Créer le like (POST)
-        const response = await fetch('http://localhost:3001/likes', {
+        const response = await fetch('https://microblogging-back-camille-lebigots-projects.vercel.app/likes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ user_id: userId, post_id: postId }),
@@ -62,7 +62,7 @@ export default function LikeButton({ postId, userId }) {
         }
       } else {
         // Supprimer le like (DELETE)
-        const response = await fetch(`http://localhost:3001/likes/${likeId}`, {
+        const response = await fetch(`https://microblogging-back-camille-lebigots-projects.vercel.app/likes/${likeId}`, {
           method: 'DELETE',
         });
 

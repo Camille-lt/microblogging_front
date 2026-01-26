@@ -19,7 +19,8 @@ export default function PostForm({ userId }) {
     };
 
     try {
-      const res = await fetch("http://localhost:3001/posts", {
+      // URL mise à jour pour pointer vers ton Back Vercel
+      const res = await fetch("https://microblogging-back-camille-lebigots-projects.vercel.app/posts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(postData),

@@ -1,5 +1,6 @@
 export const fetchPosts = async () => {
-  const response = await fetch('http://localhost:3001/posts'); // adapte si besoin
+  // URL mise à jour vers ton Back Vercel
+  const response = await fetch('https://microblogging-back-camille-lebigots-projects.vercel.app/posts'); 
   if (!response.ok) {
     throw new Error('Erreur lors du chargement des posts');
   }
