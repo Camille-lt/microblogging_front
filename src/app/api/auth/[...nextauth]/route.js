@@ -16,8 +16,7 @@ const handler = NextAuth({
         // console.log("🔍 Backend URL:", process.env.BACKEND_URL);
 
         try {
-          const url = `${process.env.BACKEND_URL}/auth/login`;
-          console.log("🔍 URL complète:", url);
+const url = `${process.env.NEXT_PUBLIC_API_URL}/auth/login`;          console.log("🔍 URL complète:", url);
 
           const payload = {
             firstname: credentials.firstname,
