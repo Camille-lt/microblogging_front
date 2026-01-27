@@ -28,8 +28,8 @@ export default function RegisterForm() {
 
     try {
       // URL mise à jour vers ton Back Vercel
-      const res = await fetch("https://microblogging-back-camille-lebigots-projects.vercel.app/register", {
-        method: "POST",
+const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/register`, {
+          method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });

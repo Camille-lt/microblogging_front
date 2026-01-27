@@ -20,8 +20,7 @@ export default function PostForm({ userId }) {
 
     try {
       // URL mise à jour pour pointer vers ton Back Vercel
-      const res = await fetch("https://microblogging-back-camille-lebigots-projects.vercel.app/posts", {
-        method: "POST",
+const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts`, {        method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(postData),
       });
