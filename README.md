@@ -1,3 +1,6 @@
+
+<img width="1454" height="801" alt="Capture d’écran 2026-02-19 à 16 10 13" src="https://github.com/user-attachments/assets/0a5115eb-b7ca-413c-8f20-73594c6d41d5" />
+
 📱 **Microblogging - Interface Utilisateur (Frontend)**
 Ceci est la partie Frontend de l'application de Microblogging. Elle communique avec une API Node.js pour permettre aux utilisateurs de partager des messages en temps réel.
 
