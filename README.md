@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📱 **Microblogging - Interface Utilisateur (Frontend)**
+Ceci est la partie Frontend de l'application de Microblogging. Elle communique avec une API Node.js pour permettre aux utilisateurs de partager des messages en temps réel.
 
-## Getting Started
+🔗 Architecture du Projet Fullstack
+Pour que l'application fonctionne, ce dépôt doit être connecté au backend suivant :
 
-First, run the development server:
+**Dépôt Backend :** https://github.com/Camille-lt/Microblogging_back
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**API Live (Vercel) :** https://microblogging-back.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✨ **Fonctionnalités clés**
+Authentification : Inscription et connexion sécurisées.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Gestion du flux : Affichage dynamique des derniers messages postés.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Publication : Formulaire de création de posts (réservé aux utilisateurs connectés).
 
-## Learn More
+Responsive Design : Interface adaptée aux mobiles et aux ordinateurs.
 
-To learn more about Next.js, take a look at the following resources:
+🛠️ **Installation et Utilisation**
+Cloner le dépôt
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Bash
+git clone https://github.com/Camille-lt/microblogging_front.git
+cd microblogging_front
+Configuration de l'API
+Vérifiez que l'URL de l'API dans votre code pointe vers le backend déployé :
+https://microblogging-back.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Lancement
+**
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Si vous utilisez un serveur de dev : npm install puis npm start.**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🚀 **Déploiement**
+Le frontend est optimisé pour être déployé sur Vercel.
+
+👤 **Auteur**
+Camille-lt - Profil GitHub
